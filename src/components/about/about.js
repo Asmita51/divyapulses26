@@ -44,7 +44,7 @@ const about = (props) => {
                                     <li><i><img src={Abd3} alt=""/></i> It has survived not only
                                         five centuries the leap into.</li>
                                 </ul> */}
-                                <Link onClick={ClickHandler} className="theme-btn-s2" to="/contact">Get In Touch</Link>
+                                <Link onClick={ClickHandler} className="theme-btn-s2" to="#">Get In Touch</Link>
                             </div>
                             <div className="ab-onion-shape"><img src={Abd4} alt=""/></div>
                         </div>

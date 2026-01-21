@@ -15,7 +15,8 @@ import BlogSection from '../../components/BlogSection/BlogSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logoDivya.png'
-
+import Choose from '../../components/ServiceSection/Choose';
+import Whatwedo from '../../components/BlogSection/Whatwedo';
 const HomePage = () => {
     return (
         <Fragment>
@@ -27,13 +28,16 @@ const HomePage = () => {
             </div>
             <About hclass={'orico-about-section section-padding'} />
             <FunFact hclass={'orico-fun-fact-section'} />
-            <ServiceSection hclass={"service_section section-padding"} />
+            {/* <ServiceSection hclass={"service_section section-padding"} /> */}
+            <Choose hclass={"service_section section-padding"} />
+
             <OfferSection />
-            <ProductSection />
-            <TeamSection />
+            <Whatwedo />
+            {/* <ProductSection /> */}
             <PartnersSection />
-            <Testimonial />
-            <BlogSection />
+            <TeamSection />
+            {/* <Testimonial /> */}
+            {/* <BlogSection /> */}
             <Footer hclass={'footer-section'} />
             <Scrollbar />
         </Fragment>

@@ -164,7 +164,7 @@ const Header = (props) => {
                                         </div>
                                     </div> */}
                                     <div className="close-form">
-                                        <Link onClick={ClickHandler} className="theme-btn" to="/contact">Connect Now</Link>
+                                        <Link onClick={ClickHandler} className="theme-btn" to="#">Connect Now</Link>
                                     </div>
                                 </div>
                             </div>

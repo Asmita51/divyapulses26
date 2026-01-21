@@ -1,10 +1,12 @@
 import React from 'react';
 
-const SectionTitle = ({ title, subtitle }) => {
+const SectionTitle = ({ title, subtitle ,desc, col}) => {
     return (
         <div className="orico-section-title">
-            <span>“<span>{subtitle}</span>”</span>
-            <h2>{title}</h2>
+            {subtitle &&  <span>“<span>{subtitle}</span>”</span>}
+           
+            <h2 className={col && 'text-white'}>{title}</h2>
+            { desc && <p className='mt-4 '>{desc}</p> }
         </div>
     );
 };

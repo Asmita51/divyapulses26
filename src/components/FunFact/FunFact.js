@@ -20,8 +20,8 @@ const FunFact = (props) => {
                         <div className="orico-fun-fact-grids clearfix">
                             <div className="grid">
                                 <div className="info">
-                                    <h3><CountUp end={58} enableScrollSpy />M</h3>
-                                    <p>Trusted By Customers</p>
+                                    <h3><CountUp end={50} enableScrollSpy />k+</h3>
+                                    <p>Trusted Customers</p>
                                     <div className="icon">
                                         <img src={FaIcon1} alt=""/>
                                     </div>
@@ -29,8 +29,8 @@ const FunFact = (props) => {
                             </div>
                             <div className="grid">
                                 <div className="info">
-                                    <h3><CountUp end={48} enableScrollSpy />.<CountUp end={6} enableScrollSpy />k</h3>
-                                    <p>Product Sale Per Day</p>
+                                    <h3><CountUp end={48} enableScrollSpy />.<CountUp end={6} enableScrollSpy />k+</h3>
+                                    <p>Product Sale</p>
                                     <div className="icon">
                                         <img src={FaIcon2} alt=""/>
                                     </div>
@@ -38,8 +38,8 @@ const FunFact = (props) => {
                             </div>
                             <div className="grid">
                                 <div className="info">
-                                    <h3><CountUp end={39} enableScrollSpy />Y</h3>
-                                    <p>Years Of Foundation</p>
+                                    <h3><CountUp end={20} enableScrollSpy />Y+</h3>
+                                    <p>Years Of Experience</p>
                                     <div className="icon">
                                         <img src={FaIcon3} alt=""/>
                                     </div>
@@ -47,8 +47,8 @@ const FunFact = (props) => {
                             </div>
                             <div className="grid">
                                 <div className="info">
-                                    <h3><CountUp end={86} enableScrollSpy />.<CountUp end={4} enableScrollSpy />M</h3>
-                                    <p>Monthly Product Order</p>
+                                    <h3><CountUp end={98} enableScrollSpy />%</h3>
+                                    <p>Happy Clients</p>
                                     <div className="icon">
                                         <img src={FaIcon4} alt=""/>
                                     </div>
