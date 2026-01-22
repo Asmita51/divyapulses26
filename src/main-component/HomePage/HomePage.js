@@ -17,6 +17,7 @@ import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logoDivya.png'
 import Choose from '../../components/ServiceSection/Choose';
 import Whatwedo from '../../components/BlogSection/Whatwedo';
+import PackagingGallery from '../../components/packaging/PackagingGallery ';
 const HomePage = () => {
     return (
         <Fragment>
@@ -31,11 +32,13 @@ const HomePage = () => {
             {/* <ServiceSection hclass={"service_section section-padding"} /> */}
             <Choose hclass={"service_section section-padding"} />
 
-            <OfferSection />
-            <Whatwedo />
             {/* <ProductSection /> */}
             <PartnersSection />
-            <TeamSection />
+            <Whatwedo />
+            <OfferSection />
+            {/* <PackagingGallery /> */}
+
+            {/* <TeamSection /> */}
             {/* <Testimonial /> */}
             {/* <BlogSection /> */}
             <Footer hclass={'footer-section'} />

@@ -14,10 +14,10 @@ const OfferSection = (props) => {
                 <div className="row justify-content-center">
                     <div className="col-lg-12 col-12">
                         <div className="orico-product-offer-text">
-                            {/* <h2>“<span>80% OFF</span>”</h2> */}
-                            <h3>- Quality Since 2003 -</h3>
+                            <h2>“<span>Pure Standards</span>”</h2>
+                            <h3>– Since 2003 –</h3>
                             <div className="btns">
-                                <Link onClick={ClickHandler} to="#" className="theme-btn-s2">Connect Now <i className="ti-arrow-right"
+                                <Link onClick={ClickHandler} to="#" className="theme-btn-s2">Explore Now <i className="ti-arrow-right"
                                     aria-hidden="true"></i></Link>
                             </div>
                         </div>

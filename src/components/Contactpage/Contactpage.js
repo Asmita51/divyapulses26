@@ -1,15 +1,20 @@
 import React from 'react';
 import ContactForm from '../ContactFrom/ContactForm'
-
-
+import OfficeLocations from './OfficeLocations ';
+import SectionTitle from '../SectionTitle/SectionTitle';
 const Contactpage = () => {
 
     return (
         <section className="wpo-contact-pg-section section-padding">
             <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-12">
+                        <SectionTitle subtitle={'Our Locations'} title={'HOW TO REACH US?'}/>
+                    </div>
+                </div>                
                 <div className="row">
                     <div className="col col-lg-10 offset-lg-1">
-                        <div className="office-info">
+                        {/* <div className="office-info">
                             <div className="row">
                                 <div className="col col-xl-4 col-lg-6 col-md-6 col-12">
                                     <div className="office-info-item">
@@ -53,11 +58,12 @@ const Contactpage = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        <OfficeLocations />
                         <div className="wpo-contact-title">
                             <h2>Have Any Question?</h2>
-                            <p>It is a long established fact that a reader will be distracted
-                                content of a page when looking.</p>
+                            {/* <p>It is a long established fact that a reader will be distracted
+                                content of a page when looking.</p> */}
                         </div>
                         <div className="wpo-contact-form-area">
                             <ContactForm />

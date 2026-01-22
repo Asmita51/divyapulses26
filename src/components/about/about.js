@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 
 // image
-import Ab from '../../images/about/ab.jpg'
+import Ab from '../../images/about/ab.png'
 import Abd1 from '../../images/about/1.png'
 import Abd2 from '../../images/about/4.png'
 import Abd3 from '../../images/about/5.png'
@@ -21,9 +21,9 @@ const about = (props) => {
                     <div className="col-lg-3 col-md-12 col-12">
                         <div className="orico-about-wrap">
                             <div className="orico-about-img">
-                                <div className="mask">
+                                {/* <div className="mask"> */}
                                     <img src={Ab} alt="ab"/>
-                                </div>
+                                {/* </div> */}
                                 <div className="orico-ab-logo">
                                     <img src={Abd1} alt="abd1"/>
                                 </div>

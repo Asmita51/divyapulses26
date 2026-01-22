@@ -1,21 +1,21 @@
 import React, { useState } from 'react'
 import SimpleReactValidator from 'simple-react-validator';
 
-const ContactForm = () => {
+
+const ContactForm1 = () => {
 
     const [forms, setForms] = useState({
         name: '',
         email: '',
+        subject: '',
         phone: '',
         message: ''
     });
-
     const [validator] = useState(new SimpleReactValidator({
         className: 'errorMessage'
     }));
-
     const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value });
+        setForms({ ...forms, [e.target.name]: e.target.value })
         if (validator.allValid()) {
             validator.hideMessages();
         } else {
@@ -30,80 +30,90 @@ const ContactForm = () => {
             setForms({
                 name: '',
                 email: '',
+                subject: '',
                 phone: '',
                 message: ''
-            });
+            })
         } else {
             validator.showMessages();
         }
     };
 
     return (
-        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active">
+        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active" >
             <div className="row">
-
                 <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
                             value={forms.name}
                             type="text"
                             name="name"
-                            onBlur={changeHandler}
-                            onChange={changeHandler}
-                            placeholder="Your Name"
-                        />
+                            onBlur={(e) => changeHandler(e)}
+                            onChange={(e) => changeHandler(e)}
+                            placeholder="Your Name" />
                         {validator.message('name', forms.name, 'required|alpha_space')}
                     </div>
                 </div>
-
                 <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
                             value={forms.email}
                             type="email"
                             name="email"
-                            onBlur={changeHandler}
-                            onChange={changeHandler}
-                            placeholder="Your Email"
-                        />
+                            onBlur={(e) => changeHandler(e)}
+                            onChange={(e) => changeHandler(e)}
+                            placeholder="Your Email" />
                         {validator.message('email', forms.email, 'required|email')}
                     </div>
                 </div>
-
-                <div className="col col-lg-12 col-12">
+                <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
                             value={forms.phone}
                             type="phone"
                             name="phone"
-                            onBlur={changeHandler}
-                            onChange={changeHandler}
-                            placeholder="Your Phone"
-                        />
+                            onBlur={(e) => changeHandler(e)}
+                            onChange={(e) => changeHandler(e)}
+                            placeholder="Your phone" />
                         {validator.message('phone', forms.phone, 'required|phone')}
                     </div>
                 </div>
-
+                <div className="col col-lg-6 col-12">
+                    <div className="form-field">
+                        <select
+                            onBlur={(e) => changeHandler(e)}
+                            onChange={(e) => changeHandler(e)}
+                            value={forms.subject}
+                            type="text"
+                            name="subject">
+                            <option>Services</option>
+                            <option>Dental Care</option>
+                            <option>Pharmacology</option>
+                            <option>Orthopedic</option>
+                            <option>Gyneological</option>
+                            <option>Rehabilitation</option>
+                            <option>Heart Surgery</option>
+                        </select>
+                        {validator.message('subject', forms.subject, 'required')}
+                    </div>
+                </div>
                 <div className="col col-lg-12 col-12">
                     <textarea
-                        onBlur={changeHandler}
-                        onChange={changeHandler}
+                        onBlur={(e) => changeHandler(e)}
+                        onChange={(e) => changeHandler(e)}
                         value={forms.message}
+                        type="text"
                         name="message"
-                        placeholder="Message"
-                    ></textarea>
+                        placeholder="Message">
+                    </textarea>
                     {validator.message('message', forms.message, 'required')}
                 </div>
-
             </div>
-
             <div className="submit-area">
-                <button type="submit" className="theme-btn">
-                    Get in Touch
-                </button>
+                <button type="submit" className="theme-btn">Get in Touch</button>
             </div>
-        </form>
-    );
-};
+        </form >
+    )
+}
 
-export default ContactForm;
+export default ContactForm1;
