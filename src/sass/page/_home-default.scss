@@ -1181,7 +1181,9 @@
         opacity: 0.9;
     }
 
-
+    .redpack::before{
+    background: green;
+    }
     .partner-wrap {
       
         .partner-item {
@@ -1207,7 +1209,9 @@
 
 }
 
-
+.redpack::before{
+    background: $theme-primary-color;
+}
 /* 3.9 orico-testimonial-area   */
 
 .orico-testimonial-area {
