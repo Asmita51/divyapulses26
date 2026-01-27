@@ -9,18 +9,20 @@ import BlogSection from '../../components/BlogSection/BlogSection';
 import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logoDivya.png'
-
+import Whatwedo from '../../components/BlogSection/Whatwedo';
+import bg from '../../images/about/bg.png'
 
 const AboutPage = () => {
     return (
         <Fragment>
             <HeaderTop />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
-            <PageTitle pageTitle={'About Us'} pagesub={'About'} />
+            <PageTitle pageTitle={'About Us'} pagesub={'About Us'} bgImg={bg}/>
             <About hclass={'orico-about-section section-padding'} />
             <FunFact hclass={'orico-fun-fact-section'} />
+            <Whatwedo />
             <Testimonial />
-            <BlogSection />
+            {/* <BlogSection /> */}
             <Footer  />
             <Scrollbar />
         </Fragment>
