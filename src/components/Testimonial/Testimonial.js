@@ -63,7 +63,7 @@ const Testimonial = (props) => {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
-                        <SectionTitle subtitle={'CLIENT TESTIMONIAL'} title={'happy customers'} />
+                        <SectionTitle subtitle={'Client Testimonial'} title={'happy customers'} />
                     </div>
                 </div>
                 <div className="orico-testimonial-wrap">

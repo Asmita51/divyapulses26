@@ -1,0 +1,180 @@
+[
+  {
+    "id": 1,
+    "proImg": "product/pulse/1.png",
+    "title": "Red Whole Lentils",
+    "category": "pulse",
+    "desc": "High-quality red whole lentils known for rich protein content, uniform size, natural taste, and suitability for everyday cooking and commercial food preparation."
+  },
+  {
+    "id": 2,
+    "proImg": "product/pulse/2.png",
+    "title": "Red Split Lentils",
+    "category": "pulse",
+    "desc": "Premium red split lentils that cook quickly, offer smooth texture, consistent color, and are ideal for soups, dals, and processed food applications."
+  },
+  {
+    "id": 3,
+    "proImg": "product/pulse/3.png",
+    "title": "Moong Whole",
+    "category": "pulse",
+    "desc": "Carefully selected whole moong beans with natural green color, high nutritional value, excellent taste, and suitability for sprouting and traditional recipes."
+  },
+  {
+    "id": 4,
+    "proImg": "product/pulse/4.png",
+    "title": "Moong Split",
+    "category": "pulse",
+    "desc": "Clean and processed split moong offering fast cooking, mild flavor, high digestibility, and consistent quality for household and bulk food usage."
+  },
+  {
+    "id": 5,
+    "proImg": "product/pulse/5.png",
+    "title": "Moong Dal",
+    "category": "pulse",
+    "desc": "Premium quality moong dal with uniform grains, smooth texture, excellent cooking performance, and widely used in Indian cuisines and food industries."
+  },
+  {
+    "id": 6,
+    "proImg": "product/pulse/6.png",
+    "title": "Urad Dal",
+    "category": "pulse",
+    "desc": "High-grade urad dal processed for purity, consistent grain size, rich taste, and perfect results in traditional dishes and fermented preparations."
+  },
+  {
+    "id": 7,
+    "proImg": "product/pulse/7.png",
+    "title": "Urad Gota",
+    "category": "pulse",
+    "desc": "Whole urad gota featuring natural color, firm texture, high protein value, and suitability for grinding, cooking, and various food formulations."
+  },
+  {
+    "id": 8,
+    "proImg": "product/pulse/8.png",
+    "title": "Urad Split",
+    "category": "pulse",
+    "desc": "Carefully milled urad split offering uniform quality, quick cooking properties, authentic flavor, and excellent consistency for domestic and commercial kitchens."
+  },
+  {
+    "id": 9,
+    "proImg": "product/pulse/9.png",
+    "title": "Urad Whole",
+    "category": "pulse",
+    "desc": "Premium whole urad beans with clean finish, strong nutritional profile, natural taste, and wide usage in traditional and industrial food products."
+  },
+  {
+    "id": 10,
+    "proImg": "product/pulse/10.png",
+    "title": "Chana Dal",
+    "category": "pulse",
+    "desc": "High-quality chana dal known for firm texture, rich flavor, consistent size, and extensive use in snacks, curries, and food processing."
+  },
+  {
+    "id": 11,
+    "proImg": "product/pulse/11.png",
+    "title": "Toor Dal",
+    "category": "pulse",
+    "desc": "Premium toor dal processed for cleanliness, even grains, excellent cooking quality, and widely used in daily meals and bulk food supply."
+  },
+  {
+    "id": 12,
+    "proImg": "product/pulse/12.png",
+    "title": "Green Whole Lentils",
+    "category": "pulse",
+    "desc": "Nutritious green whole lentils with natural color, firm texture, high protein content, and suitability for soups, salads, and cooked dishes."
+  },
+  {
+    "id": 13,
+    "proImg": "product/pulse/13.png",
+    "title": "Yellow Split Lentils",
+    "category": "pulse",
+    "desc": "Clean and polished yellow split lentils offering quick cooking, smooth consistency, mild taste, and versatile use in multiple cuisines."
+  },
+  {
+    "id": 14,
+    "proImg": "product/pulse/14.png",
+    "title": "Yellow Split Peas",
+    "category": "pulse",
+    "desc": "High-grade yellow split peas with uniform size, natural color, excellent cooking performance, and suitability for soups and processed food applications."
+  },
+
+  {
+    "id": 15,
+    "proImg": "product/peasandbeans/1.png",
+    "title": "Red Kidney Beans",
+    "category": "peasandbeans",
+    "desc": "Premium red kidney beans with firm texture, rich color, high protein content, and excellent cooking performance for curries, salads, and food processing."
+  },
+  {
+    "id": 16,
+    "proImg": "product/peasandbeans/2.png",
+    "title": "White Kidney Beans",
+    "category": "peasandbeans",
+    "desc": "High-quality white kidney beans offering smooth texture, mild flavor, uniform size, and suitability for continental dishes, soups, and commercial food use."
+  },
+  {
+    "id": 17,
+    "proImg": "product/peasandbeans/3.png",
+    "title": "Split Faba Beans",
+    "category": "peasandbeans",
+    "desc": "Carefully processed split faba beans known for quick cooking, creamy texture, high nutrition, and widespread use in traditional and modern recipes."
+  },
+  {
+    "id": 18,
+    "proImg": "product/peasandbeans/4.png",
+    "title": "Green Peas",
+    "category": "peasandbeans",
+    "desc": "Clean and sorted green peas featuring natural color, sweet taste, consistent size, and suitability for household cooking and industrial food applications."
+  },
+  {
+    "id": 19,
+    "proImg": "product/peasandbeans/5.png",
+    "title": "Yellow Peas",
+    "category": "peasandbeans",
+    "desc": "Premium yellow peas with firm grains, high protein value, excellent texture, and ideal usage in soups, snacks, and processed food products."
+  },
+  {
+    "id": 20,
+    "proImg": "product/peasandbeans/6.png",
+    "title": "Black Chick Peas",
+    "category": "peasandbeans",
+    "desc": "High-grade black chick peas offering robust flavor, dense texture, rich nutrition, and extensive use in traditional dishes and healthy food preparations."
+  },
+  {
+    "id": 21,
+    "proImg": "product/peasandbeans/7.png",
+    "title": "Chick Peas",
+    "category": "peasandbeans",
+    "desc": "Premium chick peas with uniform size, natural taste, high protein content, and versatile usage across curries, snacks, and processed foods."
+  },
+  {
+    "id": 22,
+    "proImg": "product/peasandbeans/8.png",
+    "title": "Black Eye Beans",
+    "category": "peasandbeans",
+    "desc": "Carefully selected black eye beans featuring smooth texture, quick cooking properties, balanced nutrition, and suitability for global culinary applications."
+  },
+  {
+    "id": 23,
+    "proImg": "product/peasandbeans/9.png",
+    "title": "Brown Eye Beans",
+    "category": "peasandbeans",
+    "desc": "Quality brown eye beans known for firm grains, earthy flavor, nutritional value, and reliable performance in home cooking and food manufacturing."
+  },
+  {
+    "id": 24,
+    "proImg": "product/peasandbeans/10.png",
+    "title": "Broad Beans",
+    "category": "peasandbeans",
+    "desc": "Premium broad beans with large size, rich texture, high nutritional content, and suitability for fresh cooking and processed food industries."
+  },
+  {
+    "id": 25,
+    "proImg": "product/peasandbeans/11.png",
+    "title": "Brown Beans",
+    "category": "peasandbeans",
+    "desc": "High-quality brown beans offering natural color, firm texture, excellent protein value, and versatile use in traditional and modern food preparations."
+  }
+
+
+]

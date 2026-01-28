@@ -52,7 +52,19 @@ const Header = (props) => {
                                         <li><Link onClick={ClickHandler} to="/">Home</Link></li>
                                         {/* <li><Link onClick={ClickHandler} to="/about">About</Link></li> */}
                                         <li><Link onClick={ClickHandler} to="/about">About</Link></li>
-                                        <li><Link onClick={ClickHandler} to="#">Products</Link></li>
+                                        {/* <li><Link onClick={ClickHandler} to="/products">Products</Link></li> */}
+                                        <li className="menu-item-has-children">
+                                            <Link onClick={ClickHandler} to="/products">Products</Link>
+                                            <ul className="sub-menu">
+                                                <li><Link onClick={ClickHandler} to="/pulse">Pulses</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/peasandbeans">Peas and Beans</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/spices">Spices</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/rice">Rice</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/nuts">Nuts</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/coconutpowder">Coconut Powder</Link></li>
+                                                <li><Link onClick={ClickHandler} to="/otheritems">Other Items</Link></li>
+                                            </ul>
+                                        </li>                                      
                                         <li><Link onClick={ClickHandler} to="#">Brand &amp; Packaging</Link></li>
                                         <li><Link onClick={ClickHandler} to="#">Out Team</Link></li>
                                         <li><Link onClick={ClickHandler} to="#">Gallery</Link></li>

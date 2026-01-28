@@ -24,8 +24,8 @@ import LoginPage from '../LoginPage/index';
 import ForgotPassword from '../ForgotPassword/index';
 import Register from '../SignUpPage/index';
 import ErrorPage from '../ErrorPage/ErrorPage';
-
-
+import ProductPage from '../Products/ProductPage';
+import CategoryProducts from '../CategoryProducts';
 const AllRoute = () => {
 
   return (
@@ -57,6 +57,17 @@ const AllRoute = () => {
           <Route path="forgot" element={<ForgotPassword />} />
           <Route path="register" element={<Register />} />
           <Route path='404' element={<ErrorPage />} />  
+
+
+          <Route path='products' element={<ProductPage />} />  
+          <Route path='pulse' element={<CategoryProducts category="pulse" title="Pulse"/>} />  
+          <Route path='peasandbeans' element={<CategoryProducts category="peasandbeans" title="Peas and Beans"/>} />  
+          <Route path='spices' element={<CategoryProducts category="spices" title="Spices"/>} />  
+          <Route path='rice' element={<CategoryProducts category="rice" title="Rice"/>} />  
+          <Route path='nuts' element={<CategoryProducts category="nuts" title="Nuts"/>} />  
+          <Route path='coconutpowder' element={<CategoryProducts category="coconutpowder" title="Coconut Powder"/>} />  
+          <Route path='otheritems' element={<CategoryProducts category="otheritems" title="Other Items"/>} />  
+
        
         </Routes>
       </BrowserRouter>
