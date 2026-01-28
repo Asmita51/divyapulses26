@@ -13,15 +13,14 @@ const GestureController = ({
   const videoRef = useRef(null);
   const canvasRef = useRef(null);
 
-  const [mode, setMode] = useState("NONE"); // CURSOR | SLIDER
+  const [mode, setMode] = useState("NONE");
   const [cursor, setCursor] = useState({ x: 0, y: 0 });
 
-  // ---------- REFS ----------
-  const selectedRef = useRef(null);
+  const lastXRef = useRef(null);
+  const swipeLockRef = useRef(false);
 
-  const thumbDirRef = useRef(null); // LEFT | RIGHT
-  const okLockRef = useRef(false);
-  const fistLockRef = useRef(false);
+  const selectedRef = useRef(null);
+  const prevCountRef = useRef(null); // 🔥 IMPORTANT
 
   useEffect(() => {
     const hands = new Hands({
@@ -48,9 +47,8 @@ const GestureController = ({
 
       if (!results.multiHandLandmarks?.length) {
         setMode("NONE");
-        thumbDirRef.current = null;
-        okLockRef.current = false;
-        fistLockRef.current = false;
+        lastXRef.current = null;
+        prevCountRef.current = null;
         return;
       }
 
@@ -64,19 +62,17 @@ const GestureController = ({
 
       // ---------- FINGER COUNT ----------
       let count = 0;
-      if (lm[8].y < lm[6].y) count++; // index
-      if (lm[12].y < lm[10].y) count++; // middle
-      if (lm[16].y < lm[14].y) count++; // ring
-      if (lm[20].y < lm[18].y) count++; // pinky
-      if (Math.abs(lm[4].x - lm[2].x) > 0.04) count++; // thumb
+      if (lm[8].y < lm[6].y) count++;
+      if (lm[12].y < lm[10].y) count++;
+      if (lm[16].y < lm[14].y) count++;
+      if (lm[20].y < lm[18].y) count++;
+      if (Math.abs(lm[4].x - lm[2].x) > 0.04) count++;
 
       // ---------- MODE ----------
       if (count === 1) setMode("CURSOR");
       else setMode("SLIDER");
 
-      // =====================================================
-      // 🖱️ CURSOR + HOVER SELECTION
-      // =====================================================
+      // ---------- CURSOR / SELECTION ----------
       if (count === 1) {
         const cx = lm[8].x * window.innerWidth;
         const cy = lm[8].y * window.innerHeight;
@@ -92,61 +88,45 @@ const GestureController = ({
         }
       }
 
-      // =====================================================
-      // 👍 THUMB DIRECTION → SLIDER MOVE
-      // =====================================================
-      const thumbTip = lm[4];
-      const thumbBase = lm[2];
-      const dx = thumbTip.x - thumbBase.x;
-
-      let thumbDir = null;
-      if (dx > 0.06) thumbDir = "RIGHT";
-      else if (dx < -0.06) thumbDir = "LEFT";
-
-      if (thumbDir && thumbDir !== thumbDirRef.current) {
-        if (thumbDir === "RIGHT") onSwipeRight?.();
-        if (thumbDir === "LEFT") onSwipeLeft?.();
-        thumbDirRef.current = thumbDir;
+      // ---------- FIST TRANSITION (FIXED) ----------
+      if (
+        prevCountRef.current !== null &&
+        prevCountRef.current > 0 &&
+        count === 0 &&
+        selectedRef.current
+      ) {
+        if (!isModalOpen) {
+          onConfirm?.(selectedRef.current);
+        } else {
+          onCloseModal?.();
+        }
       }
 
-      if (!thumbDir) {
-        thumbDirRef.current = null;
-      }
+      prevCountRef.current = count;
 
-      // =====================================================
-      // 👌 OK SIGN → OPEN MODAL
-      // =====================================================
-      const indexThumbDist = Math.hypot(
-        lm[4].x - lm[8].x,
-        lm[4].y - lm[8].y
-      );
+      // ---------- SLIDE BY HAND MOVEMENT ----------
+      if (count >= 2) {
+        const palmX = lm[0].x;
 
-      const otherFingersUp =
-        lm[12].y < lm[10].y &&
-        lm[16].y < lm[14].y &&
-        lm[20].y < lm[18].y;
+        if (lastXRef.current !== null && !swipeLockRef.current) {
+          const dx = palmX - lastXRef.current;
 
-      const isOkSign = indexThumbDist < 0.035 && otherFingersUp;
+          if (dx > 0.06) {
+            onSwipeRight?.();
+            swipeLockRef.current = true;
+          } else if (dx < -0.06) {
+            onSwipeLeft?.();
+            swipeLockRef.current = true;
+          }
 
-      if (isOkSign && !okLockRef.current && !isModalOpen && selectedRef.current) {
-        okLockRef.current = true;
-        onConfirm?.(selectedRef.current);
-      }
+          if (swipeLockRef.current) {
+            setTimeout(() => {
+              swipeLockRef.current = false;
+            }, 800);
+          }
+        }
 
-      if (!isOkSign) {
-        okLockRef.current = false;
-      }
-
-      // =====================================================
-      // ✊ FIST → CLOSE MODAL
-      // =====================================================
-      if (count === 0 && isModalOpen && !fistLockRef.current) {
-        fistLockRef.current = true;
-        onCloseModal?.();
-      }
-
-      if (count > 0) {
-        fistLockRef.current = false;
+        lastXRef.current = palmX;
       }
     });
 
