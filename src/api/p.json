@@ -174,7 +174,271 @@
     "title": "Brown Beans",
     "category": "peasandbeans",
     "desc": "High-quality brown beans offering natural color, firm texture, excellent protein value, and versatile use in traditional and modern food preparations."
-  }
+  },
+
+
+  {
+    "id": 26,
+    "proImg": "product/spices/1.png",
+    "title": "Coriander Powder",
+    "category": "spices",
+    "desc": "Finely ground coriander powder offering fresh aroma, natural greenish color, authentic flavor, and consistent quality for culinary and food processing applications."
+  },
+  {
+    "id": 27,
+    "proImg": "product/spices/2.png",
+    "title": "Turmeric Powder",
+    "category": "spices",
+    "desc": "High-quality turmeric powder with vibrant color, strong aroma, rich curcumin content, and suitability for cooking, seasoning, and industrial food use."
+  },
+  {
+    "id": 28,
+    "proImg": "product/spices/3.png",
+    "title": "Black Pepper Powder",
+    "category": "spices",
+    "desc": "Premium black pepper powder delivering sharp pungency, fine texture, strong aroma, and consistent taste for domestic kitchens and commercial food production."
+  },
+  {
+    "id": 29,
+    "proImg": "product/spices/4.png",
+    "title": "White Pepper Powder",
+    "category": "spices",
+    "desc": "Carefully processed white pepper powder featuring mild heat, smooth texture, clean appearance, and ideal use in soups, sauces, and continental dishes."
+  },
+  {
+    "id": 30,
+    "proImg": "product/spices/5.png",
+    "title": "Ginger Powder",
+    "category": "spices",
+    "desc": "Pure ginger powder with strong aroma, warm flavor, fine consistency, and wide application in cooking, beverages, and processed food products."
+  },
+  {
+    "id": 31,
+    "proImg": "product/spices/6.png",
+    "title": "Red Chilli Powder",
+    "category": "spices",
+    "desc": "High-grade red chilli powder offering bold color, balanced heat, consistent texture, and suitability for everyday cooking and bulk food manufacturing."
+  },
+  {
+    "id": 32,
+    "proImg": "product/spices/7.png",
+    "title": "Crushed Chilli",
+    "category": "spices",
+    "desc": "Cleanly crushed chilli flakes providing vibrant appearance, controlled heat level, strong aroma, and excellent use in seasoning and food preparations."
+  },
+  {
+    "id": 33,
+    "proImg": "product/spices/8.png",
+    "title": "Kashmiri Chilli Powder",
+    "category": "spices",
+    "desc": "Premium Kashmiri chilli powder known for bright red color, mild pungency, smooth texture, and perfect visual appeal in culinary applications."
+  },
+  {
+    "id": 34,
+    "proImg": "product/spices/9.png",
+    "title": "Long Chilli",
+    "category": "spices",
+    "desc": "Carefully dried long chillies featuring natural color, moderate heat, rich aroma, and suitability for grinding, cooking, and food processing."
+  },
+  {
+    "id": 35,
+    "proImg": "product/spices/10.png",
+    "title": "Chilli Round",
+    "category": "spices",
+    "desc": "Quality round chillies with uniform shape, strong pungency, natural color, and reliable performance in spice blending and culinary usage."
+  },
+  {
+    "id": 36,
+    "proImg": "product/spices/11.png",
+    "title": "Coriander Whole",
+    "category": "spices",
+    "desc": "Whole coriander seeds offering fresh citrusy aroma, uniform size, natural color, and excellent grinding quality for spice preparations."
+  },
+  {
+    "id": 37,
+    "proImg": "product/spices/12.png",
+    "title": "Cassia Whole",
+    "category": "spices",
+    "desc": "Premium whole cassia with strong fragrance, rich flavor, consistent bark thickness, and extensive use in culinary and food processing industries."
+  },
+  {
+    "id": 38,
+    "proImg": "product/spices/13.png",
+    "title": "Cumin Seeds",
+    "category": "spices",
+    "desc": "High-quality cumin seeds featuring strong aroma, uniform size, natural oil content, and essential usage in traditional and global cuisines."
+  },
+  {
+    "id": 39,
+    "proImg": "product/spices/14.png",
+    "title": "Cumin Powder",
+    "category": "spices",
+    "desc": "Finely milled cumin powder delivering intense aroma, warm earthy flavor, smooth texture, and consistent quality for seasoning applications."
+  },
+  {
+    "id": 40,
+    "proImg": "product/spices/15.png",
+    "title": "Star Aniseeds",
+    "category": "spices",
+    "desc": "Carefully selected star aniseeds offering strong licorice aroma, attractive appearance, and essential flavor contribution to spice blends."
+  },
+  {
+    "id": 41,
+    "proImg": "product/spices/16.png",
+    "title": "Black Pepper Whole",
+    "category": "spices",
+    "desc": "Premium whole black pepper with bold pungency, high essential oil content, uniform grains, and superior grinding performance."
+  },
+  {
+    "id": 42,
+    "proImg": "product/spices/17.png",
+    "title": "Black Cumin Seeds",
+    "category": "spices",
+    "desc": "High-grade black cumin seeds known for intense aroma, distinctive flavor, medicinal value, and widespread culinary applications."
+  },
+  {
+    "id": 43,
+    "proImg": "product/spices/18.png",
+    "title": "Bay Leaves",
+    "category": "spices",
+    "desc": "Naturally dried bay leaves offering strong fragrance, clean texture, and essential flavor enhancement in soups, curries, and sauces."
+  },
+  {
+    "id": 44,
+    "proImg": "product/spices/19.png",
+    "title": "LG Powder",
+    "category": "spices",
+    "desc": "Finely processed LG powder with consistent granulation, reliable quality, and suitable application in seasoning blends and food formulations."
+  },
+  {
+    "id": 45,
+    "proImg": "product/spices/20.png",
+    "title": "LG Stone",
+    "category": "spices",
+    "desc": "Carefully selected LG stone product offering purity, consistent texture, and suitability for traditional processing and specialized applications."
+  },
+  {
+    "id": 46,
+    "proImg": "product/spices/21.png",
+    "title": "Ginger China",
+    "category": "spices",
+    "desc": "Imported Chinese ginger featuring strong aroma, firm texture, excellent drying quality, and wide usage in spice and food industries."
+  },
+  {
+    "id": 47,
+    "proImg": "product/spices/22.png",
+    "title": "Dry Yellow Lemon",
+    "category": "spices",
+    "desc": "Naturally dried yellow lemons offering tangy flavor, strong aroma, and traditional usage in seasoning and Middle Eastern cuisines."
+  },
+  {
+    "id": 48,
+    "proImg": "product/spices/23.png",
+    "title": "Dry Black Lemon",
+    "category": "spices",
+    "desc": "Premium dry black lemons known for intense citrus notes, authentic flavor, and extensive use in traditional spice preparations."
+  },
+  {
+    "id": 49,
+    "proImg": "product/spices/24.png",
+    "title": "Haldi Whole",
+    "category": "spices",
+    "desc": "Whole turmeric fingers with high curcumin content, strong aroma, natural color, and suitability for grinding and processing."
+  },
+  {
+    "id": 50,
+    "proImg": "product/spices/25.png",
+    "title": "Cloves",
+    "category": "spices",
+    "desc": "Premium cloves featuring strong aroma, high oil content, uniform size, and essential usage in spice blends and food production."
+  },
+  {
+    "id": 51,
+    "proImg": "product/spices/26.png",
+    "title": "Garlic Powder",
+    "category": "spices",
+    "desc": "Fine garlic powder offering strong flavor, smooth texture, long shelf life, and ideal application in seasoning and processed foods."
+  },
+  {
+    "id": 52,
+    "proImg": "product/spices/27.png",
+    "title": "Lemon Salt",
+    "category": "spices",
+    "desc": "Tangy lemon salt blend providing refreshing citrus flavor, balanced seasoning, and popular use in snacks and culinary preparations."
+  },
+
+  {
+    "id": 53,
+    "proImg": "product/rice/1.png",
+    "title": "Basmati Rice",
+    "category": "rice",
+    "desc": "Premium basmati rice known for long grains, natural aroma, fluffy texture after cooking, and preferred usage in biryanis and premium rice dishes."
+  },
+  {
+    "id": 54,
+    "proImg": "product/rice/2.png",
+    "title": "Broken Rice",
+    "category": "rice",
+    "desc": "High-quality broken rice offering quick cooking, excellent texture, cost efficiency, and wide usage in food processing, snacks, and animal feed."
+  },
+  {
+    "id": 55,
+    "proImg": "product/rice/3.png",
+    "title": "Parboiled Rice",
+    "category": "rice",
+    "desc": "Parboiled rice processed for enhanced nutrition, firm grain structure, non-sticky texture, and suitability for daily meals and large-scale catering."
+  },
+
+  {
+    "id": 56,
+    "proImg": "product/nuts/1.png",
+    "title": "Raisins",
+    "category": "nuts",
+    "desc": "Premium quality raisins with natural sweetness, uniform size, soft texture, and ideal usage in snacks, bakery products, and food processing."
+  },
+  {
+    "id": 57,
+    "proImg": "product/nuts/2.png",
+    "title": "Black Raisins",
+    "category": "nuts",
+    "desc": "High-grade black raisins offering rich flavor, chewy texture, natural color, and suitability for confectionery, desserts, and nutritional diets."
+  },
+  {
+    "id": 58,
+    "proImg": "product/nuts/3.png",
+    "title": "Almonds",
+    "category": "nuts",
+    "desc": "Carefully selected almonds featuring crunchy texture, high protein content, natural taste, and extensive use in snacks, sweets, and food manufacturing."
+  },
+  {
+    "id": 59,
+    "proImg": "product/nuts/4.png",
+    "title": "Cashew Nuts",
+    "category": "nuts",
+    "desc": "Premium cashew nuts with smooth texture, rich creamy flavor, uniform grading, and versatile application in cooking and food processing industries."
+  },
+  {
+    "id": 60,
+    "proImg": "product/nuts/5.png",
+    "title": "Peanuts",
+    "category": "nuts",
+    "desc": "High-quality peanuts offering natural crunch, balanced flavor, high oil content, and suitability for roasting, snacking, and food processing."
+  },
+  {
+    "id": 61,
+    "proImg": "product/nuts/6.png",
+    "title": "Walnuts",
+    "category": "nuts",
+    "desc": "Premium walnuts known for rich taste, crunchy texture, high omega content, and wide usage in bakery, confectionery, and health foods."
+  },
+{
+  "id": 62,
+  "proImg": "product/coconutpowder/1.png",
+  "title": "Coconut Powder",
+  "category": "coconutpowder",
+  "desc": "High-quality coconut powder offering natural aroma, fine texture, rich taste, and excellent suitability for bakery, confectionery, beverages, and food processing applications."
+}
+
 
 
 ]
