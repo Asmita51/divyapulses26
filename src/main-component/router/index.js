@@ -26,6 +26,16 @@ import Register from '../SignUpPage/index';
 import ErrorPage from '../ErrorPage/ErrorPage';
 import ProductPage from '../Products/ProductPage';
 import CategoryProducts from '../CategoryProducts';
+import BrandandpackagingPage from '../Brandandpackaging/BrandandpackagingPage';
+import bg1 from '../../images/product/bg1.png';
+import bg2 from '../../images/product/bg2.png';
+import bg3 from '../../images/product/bg3.png';
+import bg4 from '../../images/product/bg4.png';
+import bg5 from '../../images/product/bg5.png';
+import bg6 from '../../images/product/bg6.png';
+import bg7 from '../../images/product/bg7.png';
+
+
 const AllRoute = () => {
 
   return (
@@ -60,15 +70,15 @@ const AllRoute = () => {
 
 
           <Route path='products' element={<ProductPage />} />  
-          <Route path='pulse' element={<CategoryProducts category="pulse" title="Pulse"/>} />  
-          <Route path='peasandbeans' element={<CategoryProducts category="peasandbeans" title="Peas and Beans"/>} />  
-          <Route path='spices' element={<CategoryProducts category="spices" title="Spices"/>} />  
-          <Route path='rice' element={<CategoryProducts category="rice" title="Rice"/>} />  
-          <Route path='nuts' element={<CategoryProducts category="nuts" title="Nuts"/>} />  
-          <Route path='coconutpowder' element={<CategoryProducts category="coconutpowder" title="Coconut Powder"/>} />  
-          <Route path='otheritems' element={<CategoryProducts category="otheritems" title="Other Items"/>} />  
+          <Route path='pulse' element={<CategoryProducts category="pulse" title="Pulse" bg={bg1}/>} />  
+          <Route path='peasandbeans' element={<CategoryProducts category="peasandbeans" title="Peas and Beans" bg={bg2}/>} />  
+          <Route path='spices' element={<CategoryProducts category="spices" title="Spices" bg={bg3}/>} />  
+          <Route path='rice' element={<CategoryProducts category="rice" title="Rice" bg={bg4}/>} />  
+          <Route path='nuts' element={<CategoryProducts category="nuts" title="Nuts" bg={bg5}/>} />  
+          <Route path='coconutpowder' element={<CategoryProducts category="coconutpowder" title="Coconut Powder" bg={bg6}/>} />  
+          <Route path='otheritems' element={<CategoryProducts category="otheritems" title="Other Items" bg={bg7}/>} />  
+          <Route path='brandandpackaging' element={<BrandandpackagingPage />} />  
 
-       
         </Routes>
       </BrowserRouter>
 

@@ -10,7 +10,7 @@ import Footer from '../../components/footer/Footer';
 import Scrollbar from '../../components/scrollbar/scrollbar';
 import Logo from '../../images/logoDivya.png'
 import Whatwedo from '../../components/BlogSection/Whatwedo';
-import bg from '../../images/about/bg.png'
+import bg from '../../images/product/bg.png';
 import ProductListPage from '../../components/ProductList/ProductListPage';
 const ProductPage = () => {
     return (

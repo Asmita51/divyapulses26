@@ -1,0 +1,109 @@
+.divya-preloader{
+  position:fixed;
+  inset:0;
+  background:linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.98));
+  z-index:999999;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.divya-preloader__center{
+  text-align:center;
+  max-width:90%;
+}
+.product-wrap{
+  position:relative;
+  width:140px;
+  height:140px;
+  margin:0 auto 18px auto;
+}
+.product-img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:8px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.12);
+  position:relative;
+  z-index:3;
+}
+.pulse{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:rgba(76,175,80,0.12);
+  width:140px;
+  height:140px;
+  z-index:1;
+  animation: pulse 2.2s infinite ease-out;
+}
+.pulse-2{ animation-delay: .9s; }
+
+@keyframes pulse{
+  0%{ transform:translate(-50%,-50%) scale(0.6); opacity:0.8 }
+  70%{ transform:translate(-50%,-50%) scale(1.35); opacity:0 }
+  100%{ transform:translate(-50%,-50%) scale(1.6); opacity:0 }
+}
+
+.preloader-text{  color:#333; font-size:16px; max-width:680px; margin:0 auto }
+.typed{ display:inline-block; }
+.cursor{ color:#333; margin-left:6px; animation: blink 1s steps(2,end) infinite }
+@keyframes blink{ 50%{ opacity:0 } }
+
+.preloader-skip{
+  position:fixed;
+  right:18px;
+  bottom:120px;
+  background:transparent;
+  color:#333;
+  border:1px solid rgba(0,0,0,0.08);
+  padding:8px 12px;
+  border-radius:8px;
+  font-size:13px;
+  cursor:pointer;
+  z-index:1000000;
+}
+
+.preloader-skip--top{
+  top:18px;
+  bottom:auto;
+  right:18px;
+  background:rgba(0,0,0,0.6);
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:4px;
+}
+
+.preloader-audio-prompt{
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(0,0,0,0.35);
+  z-index:1000001;
+}
+.preloader-audio-prompt__box{
+  background:#fff;
+  padding:18px;
+  border-radius:8px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,0.18);
+}
+.preloader-audio-prompt__btn{
+  margin-top:10px;
+  background:#2b8a3e;
+  color:#fff;
+  border:none;
+  padding:8px 14px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* Responsive */
+@media (max-width:600px){
+  .product-wrap{ width:110px; height:110px }
+  .preloader-text{ font-size:15px }
+}

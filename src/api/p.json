@@ -431,14 +431,209 @@
     "category": "nuts",
     "desc": "Premium walnuts known for rich taste, crunchy texture, high omega content, and wide usage in bakery, confectionery, and health foods."
   },
-{
-  "id": 62,
-  "proImg": "product/coconutpowder/1.png",
-  "title": "Coconut Powder",
-  "category": "coconutpowder",
-  "desc": "High-quality coconut powder offering natural aroma, fine texture, rich taste, and excellent suitability for bakery, confectionery, beverages, and food processing applications."
-}
 
+  {
+    "id": 62,
+    "proImg": "product/coconutpowder/1.png",
+    "title": "Coconut Powder",
+    "category": "coconutpowder",
+    "desc": "High-quality coconut powder offering natural aroma, fine texture, rich taste, and excellent suitability for bakery, confectionery, beverages, and food processing applications."
+  },
 
-
+  {
+    "id": 63,
+    "proImg": "product/otheritems/1.png",
+    "title": "Salt",
+    "category": "otheritems",
+    "desc": "High-quality refined edible salt suitable for daily cooking, food processing, and commercial use, ensuring purity, consistent grain size, and balanced taste."
+  },
+  {
+    "id": 64,
+    "proImg": "product/otheritems/2.png",
+    "title": "Green Millet",
+    "category": "otheritems",
+    "desc": "Nutritious green millet rich in fiber, protein, and minerals, widely used in healthy diets, traditional meals, and value-added food products."
+  },
+  {
+    "id": 65,
+    "proImg": "product/otheritems/3.png",
+    "title": "Monosodium Glutamate (Ajinomoto)",
+    "category": "otheritems",
+    "desc": "Food-grade monosodium glutamate used as a flavor enhancer to improve umami taste in snacks, sauces, seasonings, and processed foods."
+  },
+  {
+    "id": 66,
+    "proImg": "product/otheritems/4.png",
+    "title": "Semolina",
+    "category": "otheritems",
+    "desc": "Premium quality wheat semolina with uniform granulation, ideal for pasta, upma, bakery items, and various traditional food preparations."
+  },
+  {
+    "id": 67,
+    "proImg": "product/otheritems/5.png",
+    "title": "Horse Gram",
+    "category": "otheritems",
+    "desc": "Protein-rich horse gram commonly used in traditional recipes, health foods, and animal feed, known for its high fiber content."
+  },
+  {
+    "id": 68,
+    "proImg": "product/otheritems/6.png",
+    "title": "Besan Matar Dal",
+    "category": "otheritems",
+    "desc": "Finely milled besan made from quality matar dal, suitable for snacks, sweets, batters, and commercial food applications."
+  },
+  {
+    "id": 69,
+    "proImg": "product/otheritems/7.png",
+    "title": "Sodium Bicarbonate (Soda)",
+    "category": "otheritems",
+    "desc": "Food-grade sodium bicarbonate widely used in baking, cooking, and food processing to improve texture, softness, and product consistency."
+  },
+  {
+    "id": 70,
+    "proImg": "product/otheritems/8.png",
+    "title": "Sugar",
+    "category": "otheritems",
+    "desc": "Pure refined sugar processed under hygienic conditions, suitable for household consumption, confectionery manufacturing, and beverage industries."
+  },
+  {
+    "id": 71,
+    "proImg": "product/otheritems/9.png",
+    "title": "Rice Flakes",
+    "category": "otheritems",
+    "desc": "Lightweight flattened rice flakes used for breakfast, snacks, and traditional dishes, offering quick preparation and easy digestion."
+  },
+  {
+    "id": 72,
+    "proImg": "product/otheritems/10.png",
+    "title": "Soyawadi",
+    "category": "otheritems",
+    "desc": "High-protein soya chunks used as a nutritious meat alternative, suitable for curries, snacks, and large-scale food production."
+  },
+  {
+    "id": 73,
+    "proImg": "product/otheritems/11.png",
+    "title": "Roasted Gram Split",
+    "category": "otheritems",
+    "desc": "Clean and roasted split gram used in snacks, chutneys, and namkeen preparation, offering rich taste and crunchy texture."
+  },
+  {
+    "id": 74,
+    "proImg": "product/otheritems/12.png",
+    "title": "Roasted Gram Whole",
+    "category": "otheritems",
+    "desc": "Whole roasted gram processed for enhanced flavor, commonly consumed as a healthy snack or used in traditional food products."
+  },
+  {
+    "id": 75,
+    "proImg": "product/otheritems/13.png",
+    "title": "Charmagaz",
+    "category": "otheritems",
+    "desc": "Premium quality charmagaz seed mix used in sweets, gravies, and traditional recipes for added nutrition and rich flavor."
+  },
+  {
+    "id": 76,
+    "proImg": "product/otheritems/14.png",
+    "title": "Moth",
+    "category": "otheritems",
+    "desc": "Nutritious moth beans rich in fiber and protein, commonly used in Indian cuisines, snacks, and traditional food preparations."
+  },
+  {
+    "id": 77,
+    "proImg": "product/otheritems/15.png",
+    "title": "Tomato Paste",
+    "category": "otheritems",
+    "desc": "Concentrated tomato paste prepared from ripe tomatoes, ideal for sauces, gravies, soups, and commercial food processing."
+  },
+  {
+    "id": 78,
+    "proImg": "product/otheritems/16.png",
+    "title": "Fennel Seeds",
+    "category": "otheritems",
+    "desc": "Aromatic fennel seeds used as a spice and mouth freshener, known for digestive benefits and refreshing natural sweetness."
+  },
+  {
+    "id": 79,
+    "proImg": "product/otheritems/17.png",
+    "title": "Corn Starch",
+    "category": "otheritems",
+    "desc": "Fine-quality corn starch used as a thickening agent in soups, sauces, desserts, and various processed food products."
+  },
+  {
+    "id": 80,
+    "proImg": "product/otheritems/18.png",
+    "title": "Popcorn",
+    "category": "otheritems",
+    "desc": "Premium popcorn kernels selected for uniform popping, suitable for home consumption, cinemas, and commercial snack production."
+  },
+  {
+    "id": 81,
+    "proImg": "product/otheritems/19.png",
+    "title": "Fenugreek Seeds",
+    "category": "otheritems",
+    "desc": "Natural fenugreek seeds valued for strong aroma, medicinal properties, and use in spice blends and traditional cooking."
+  },
+  {
+    "id": 82,
+    "proImg": "product/otheritems/20.png",
+    "title": "Kasuri Methi",
+    "category": "otheritems",
+    "desc": "Dried fenugreek leaves used to enhance aroma and flavor in curries, gravies, and restaurant-style Indian dishes."
+  },
+  {
+    "id": 83,
+    "proImg": "product/otheritems/21.png",
+    "title": "Rice Powder",
+    "category": "otheritems",
+    "desc": "Finely ground rice powder suitable for traditional snacks, batters, sweets, and various regional food preparations."
+  },
+  {
+    "id": 84,
+    "proImg": "product/otheritems/22.png",
+    "title": "Sagoo Seeds",
+    "category": "otheritems",
+    "desc": "High-quality sago seeds commonly used in fasting foods, desserts, and snacks, known for easy digestibility."
+  },
+  {
+    "id": 85,
+    "proImg": "product/otheritems/23.png",
+    "title": "Tamarind",
+    "category": "otheritems",
+    "desc": "Natural tamarind with rich sour taste, widely used in chutneys, curries, sauces, and traditional food preparations."
+  },
+  {
+    "id": 86,
+    "proImg": "product/otheritems/24.png",
+    "title": "Sesame Seeds",
+    "category": "otheritems",
+    "desc": "Clean and natural sesame seeds used in cooking, oil extraction, bakery products, and traditional sweets."
+  },
+  {
+    "id": 87,
+    "proImg": "product/otheritems/25.png",
+    "title": "Lump Sugar",
+    "category": "otheritems",
+    "desc": "Traditional lump sugar commonly used in beverages, sweets, and religious purposes, offering mild sweetness and purity."
+  },
+  {
+    "id": 88,
+    "proImg": "product/otheritems/26.png",
+    "title": "Sweet Fennel",
+    "category": "otheritems",
+    "desc": "Sweetened fennel seeds used as a mouth freshener after meals, known for pleasant taste and digestive benefits."
+  },
+  {
+    "id": 89,
+    "proImg": "product/otheritems/27.png",
+    "title": "Papad",
+    "category": "otheritems",
+    "desc": "Crispy papads prepared from quality pulses and spices, suitable for roasting, frying, and large-scale distribution."
+  },
+  {
+    "id": 90,
+    "proImg": "product/otheritems/28.png",
+    "title": "Mustard Seeds",
+    "category": "otheritems",
+    "desc": "Strong-flavored mustard seeds widely used in tempering, spice blends, pickles, and food processing applications."
+  }
 ]

@@ -16,7 +16,7 @@ const CategoryProducts = (props) => {
         <Fragment>
             <HeaderTop />
             <Navbar hclass={'wpo-site-header'} Logo={Logo} />
-            <PageTitle pageTitle={props.title} pagesub={props.title} />
+            <PageTitle pageTitle={props.title} pagesub={props.title} bgImg={props.bg}/>
             <ProductCategory category={props.category}/>
             <Footer FooterShape={false} />
             <Scrollbar />
