@@ -14,21 +14,22 @@ const TeamSection = (props) => {
             <div className="container">
                 <div className="row">
                     <div className="col-12">
-                        <SectionTitle subtitle={'AMAZING TEAM'} title={'OUR Team Member'} />
+                        <SectionTitle subtitle={'Amazing Team'} title={'OUR Team Members'} />
                     </div>
                 </div>
                 <div className="wpo-team-wrap">
                     <div className="row">
                         {Teams.map((Teamsitem, item) => (
-                            <div className="col col-lg-3 col-md-6 col-12" key={item}>
+                            <div className="col col-lg-3 col-md-4 col-12 mb-5" key={item}>
                                 <div className="wpo-team-item">
                                     <div className="wpo-team-img">
                                         <img src={Teamsitem.simage} alt="" />
                                         <div className="wpo-team-text">
                                             <div className="text-inner">
-                                                <h2>{Teamsitem.title}</h2>
-                                                <span>{Teamsitem.Subtitle}</span>
-                                                <div className="social-widget">
+                                                <h2 className="text-dark">{Teamsitem.title}</h2>
+                                                <p style={{ marginBottom:'0px'}}>{Teamsitem.Subtitle}</p>
+                                                <p style={{marginBottom:'0px'}}>{Teamsitem.email}</p>
+                                                {/* <div className="social-widget">
                                                     <ul>
                                                         <li><Link onClick={ClickHandler} to="#"><i className="ti-facebook" aria-hidden="true"></i></Link>
                                                         </li>
@@ -37,7 +38,7 @@ const TeamSection = (props) => {
                                                         <li><Link onClick={ClickHandler} to="#"><i className="ti-linkedin" aria-hidden="true"></i></Link>
                                                         </li>
                                                     </ul>
-                                                </div>
+                                                </div> */}
                                             </div>
                                         </div>
                                     </div>

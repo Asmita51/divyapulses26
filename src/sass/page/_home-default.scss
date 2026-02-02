@@ -1526,8 +1526,8 @@
             .wpo-team-img {
                 overflow: hidden;
                 position: relative;
-                -webkit-mask-image: url(../../images/team/mask.png);
-                mask-image: url(../../images/team/mask.png);
+                // -webkit-mask-image: url(../../images/team/mask.png);
+                // mask-image: url(../../images/team/mask.png);
                 -webkit-mask-size: 98%;
                 mask-size: 98%;
                 -webkit-mask-repeat: no-repeat;
@@ -1550,7 +1550,7 @@
                 justify-content: center;
                 flex-direction: column;
                 background: transparentize($theme-primary-color-s2, .2);
-                border-radius: 50%;
+                // border-radius: 50%;
                 transition: all .3s;
                 transform: translateY(100%);
                 padding-top: 15px;

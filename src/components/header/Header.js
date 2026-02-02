@@ -65,11 +65,11 @@ const Header = (props) => {
                                                 <li><Link onClick={ClickHandler} to="/otheritems">Other Items</Link></li>
                                             </ul>
                                         </li>                                      
-                                        <li><Link onClick={ClickHandler} to="#">Brand &amp; Packaging</Link></li>
-                                        {/* <li><Link onClick={ClickHandler} to="/brandandpackaging">Brand &amp; Packaging</Link></li> */}
+                                        {/* <li><Link onClick={ClickHandler} to="#">Brand &amp; Packaging</Link></li> */}
+                                        <li><Link onClick={ClickHandler} to="/brandandpackaging">Brand &amp; Packaging</Link></li>
 
-                                        <li><Link onClick={ClickHandler} to="#">Out Team</Link></li>
-                                        <li><Link onClick={ClickHandler} to="#">Gallery</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/team">Out Team</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/gallery">Gallery</Link></li>
                                         {/* <li className="menu-item-has-children">
                                             <Link onClick={ClickHandler} to="#">Pages</Link>
                                             <ul className="sub-menu">

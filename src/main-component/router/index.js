@@ -27,6 +27,7 @@ import ErrorPage from '../ErrorPage/ErrorPage';
 import ProductPage from '../Products/ProductPage';
 import CategoryProducts from '../CategoryProducts';
 import BrandandpackagingPage from '../Brandandpackaging/BrandandpackagingPage';
+import Gallery from '../Gallery/Gallery';
 import bg1 from '../../images/product/bg1.png';
 import bg2 from '../../images/product/bg2.png';
 import bg3 from '../../images/product/bg3.png';
@@ -78,6 +79,7 @@ const AllRoute = () => {
           <Route path='coconutpowder' element={<CategoryProducts category="coconutpowder" title="Coconut Powder" bg={bg6}/>} />  
           <Route path='otheritems' element={<CategoryProducts category="otheritems" title="Other Items" bg={bg7}/>} />  
           <Route path='brandandpackaging' element={<BrandandpackagingPage />} />  
+          <Route path='gallery' element={<Gallery />} />  
 
         </Routes>
       </BrowserRouter>
