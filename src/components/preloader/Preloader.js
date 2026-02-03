@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Preloader.css';
 import productImg from '../../images/partner/1.png';
-
 const MESSAGE =
   "Welcome To Divya Industries. Delivering premium-quality products with a commitment to purity, freshness, and trust.";
 
@@ -9,6 +8,11 @@ const Preloader = ({ onFinish }) => {
   const [typed, setTyped] = useState('');
   const [permissionAnswered, setPermissionAnswered] = useState(false);
   const [audioAllowed, setAudioAllowed] = useState(false);
+  const [typingDone, setTypingDone] = useState(false);
+  const [audioDone, setAudioDone] = useState(false);
+  const typingDoneRef = useRef(false);
+  const audioDoneRef = useRef(false);
+  const audioAllowedRef = useRef(false);
 
   const typingIntervalRef = useRef(null);
   const utteranceRef = useRef(null);
@@ -27,6 +31,8 @@ const Preloader = ({ onFinish }) => {
       setTyped(MESSAGE.slice(0, i));
       if (i >= MESSAGE.length) {
         clearInterval(typingIntervalRef.current);
+        setTypingDone(true);
+        typingDoneRef.current = true;
       }
     }, 55); // letter by letter
   };
@@ -44,27 +50,28 @@ const Preloader = ({ onFinish }) => {
     utterance.lang = 'en-IN';
 
     utterance.onend = () => {
-      sessionStorage.setItem('divya_preloader_shown', '1');
-      onFinish(); // 🔑 website unlocks ONLY here
+      setAudioDone(true);
+      audioDoneRef.current = true;
     };
 
     utterance.onerror = () => {
-      sessionStorage.setItem('divya_preloader_shown', '1');
-      onFinish();
+      setAudioDone(true);
+      audioDoneRef.current = true;
     };
 
     utteranceRef.current = utterance;
     window.speechSynthesis.cancel();
 
-    // slight delay so typing starts first
+    // start audio after 1 sec (while typing continues)
     setTimeout(() => {
       window.speechSynthesis.speak(utterance);
-    }, 1200);
+    }, 1000);
   };
 
   const handleAllow = () => {
     setPermissionAnswered(true);
     setAudioAllowed(true);
+    audioAllowedRef.current = true;
     startTyping();
     startSpeech();
   };
@@ -72,21 +79,37 @@ const Preloader = ({ onFinish }) => {
   const handleDeny = () => {
     setPermissionAnswered(true);
     setAudioAllowed(false);
+    audioAllowedRef.current = false;
     startTyping();
-
-    // typing only → unlock after typing ends
-    setTimeout(() => {
-      sessionStorage.setItem('divya_preloader_shown', '1');
-      onFinish();
-    }, MESSAGE.length * 55 + 500);
   };
 
-  const handleSkip = () => {
+  const handleSkip = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
     sessionStorage.setItem('divya_preloader_shown', '1');
     clearInterval(typingIntervalRef.current);
-    window.speechSynthesis?.cancel();
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel();
+    }
     onFinish();
   };
+
+  // watch for conditions to finish preloader
+  useEffect(() => {
+    // if audio is allowed: wait for both typing & audio
+    // if audio not allowed: finish when typingDone
+    if (audioAllowedRef.current) {
+      if (typingDoneRef.current && audioDoneRef.current) {
+        sessionStorage.setItem('divya_preloader_shown', '1');
+        onFinish();
+      }
+    } else {
+      if (typingDoneRef.current) {
+        sessionStorage.setItem('divya_preloader_shown', '1');
+        onFinish();
+      }
+    }
+  }, [typingDone, audioDone]);
 
 return (
   <div className="divya-preloader agro-theme">

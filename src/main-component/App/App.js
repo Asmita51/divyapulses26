@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AllRoute from '../router'
 import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 // import Preloader from '../../components/preloader/Preloader';
 
 
-const App = () => { 
+const App = () => {
+  const [showPreloader, setShowPreloader] = useState(() => {
+    // show preloader if not yet shown this session
+    return !sessionStorage.getItem('divya_preloader_shown');
+  });
+
+  useEffect(() => {
+    document.body.style.overflow = showPreloader ? 'hidden' : 'auto';
+    return () => { document.body.style.overflow = 'auto'; };
+  }, [showPreloader]);
+
+  const handlePreloaderFinish = () => {
+    setShowPreloader(false);
+  };
 
   return (
     <div className="App" id='scrool'>
-          {/* <Preloader/> */}
+      {/* {showPreloader ? (
+        <Preloader onFinish={handlePreloaderFinish} />
+      ) : (
+        <>
           <AllRoute/>
           <ToastContainer/>
+        </>
+      )} */}
+
+          <AllRoute/>
+          <ToastContainer/>      
     </div>
   );
 }

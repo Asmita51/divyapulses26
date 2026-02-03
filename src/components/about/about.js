@@ -24,9 +24,9 @@ const about = (props) => {
                                 {/* <div className="mask"> */}
                                     <img src={Ab} alt="ab"/>
                                 {/* </div> */}
-                                <div className="orico-ab-logo">
+                                {/* <div className="orico-ab-logo">
                                     <img src={Abd1} alt="abd1"/>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

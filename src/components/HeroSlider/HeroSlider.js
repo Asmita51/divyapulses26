@@ -16,6 +16,7 @@ import b2 from '../../images/slider/b2.png'
 import b3 from '../../images/slider/b3.png'
 import b4 from '../../images/slider/b4.png'
 import b5 from '../../images/slider/b5.png'
+import b6 from '../../images/slider/b6.png'
 
 const HeroSlider = () => {
     return (
@@ -31,7 +32,7 @@ const HeroSlider = () => {
                 navigation
             >
                 <SwiperSlide>
-                <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${b1})` }}>
+                <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${b6})` }}>
                     <div className="container-fluid">
                     <div className="slide-content p-0">
                         <div className="slide-sub-title">
@@ -48,14 +49,38 @@ const HeroSlider = () => {
                         </div>
                     </div>
                     </div>
-                    <div className="shape s1"><img src={Shape} alt="" /></div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
                     <div className="shape s2"><img src={Shape2} alt="" /></div>
                     <div className="shape s3"><img src={Shape3} alt="" /></div>
                     <div className="shape s4"><img src={Shape4} alt="" /></div>
-                    <div className="shape s5"><img src={Shape5} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
                 </div>
                 </SwiperSlide>
-
+                <SwiperSlide>
+                <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${b1})` }}>
+                    <div className="container-fluid">
+                    <div className="slide-content p-0">
+                        <div className="slide-sub-title">
+                        <p>“<span>TRUSTED FOOD PROCESSING PARTNER</span>”</p>
+                        </div>
+                        <div className="slide-title">
+                        <h2>Advanced <span>Infrastructure</span></h2>
+                        </div>
+                        <div className="slide-text">
+                        <p>A globally trusted name in grain processing and packing, committed to consistency, compliance, and high-volume quality production.</p>
+                        </div>
+                        <div className="slide-btns">
+                        <Link to="#" className="theme-btn">Explore more</Link>
+                        </div>
+                    </div>
+                    </div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
+                    <div className="shape s2"><img src={Shape2} alt="" /></div>
+                    <div className="shape s3"><img src={Shape3} alt="" /></div>
+                    <div className="shape s4"><img src={Shape4} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
+                </div>
+                </SwiperSlide>
                 <SwiperSlide>
                 <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${b2})` }}>
                     <div className="container-fluid">
@@ -74,11 +99,11 @@ const HeroSlider = () => {
                         </div>
                     </div>
                     </div>
-                    <div className="shape s1"><img src={Shape} alt="" /></div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
                     <div className="shape s2"><img src={Shape2} alt="" /></div>
                     <div className="shape s3"><img src={Shape3} alt="" /></div>
                     <div className="shape s4"><img src={Shape4} alt="" /></div>
-                    <div className="shape s5"><img src={Shape5} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
                 </div>
                 </SwiperSlide>
 
@@ -100,11 +125,11 @@ const HeroSlider = () => {
                         </div>
                     </div>
                     </div>
-                    <div className="shape s1"><img src={Shape} alt="" /></div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
                     <div className="shape s2"><img src={Shape2} alt="" /></div>
                     <div className="shape s3"><img src={Shape3} alt="" /></div>
                     <div className="shape s4"><img src={Shape4} alt="" /></div>
-                    <div className="shape s5"><img src={Shape5} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
                 </div>
                 </SwiperSlide>
 
@@ -126,11 +151,11 @@ const HeroSlider = () => {
                         </div>
                     </div>
                     </div>
-                    <div className="shape s1"><img src={Shape} alt="" /></div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
                     <div className="shape s2"><img src={Shape2} alt="" /></div>
                     <div className="shape s3"><img src={Shape3} alt="" /></div>
                     <div className="shape s4"><img src={Shape4} alt="" /></div>
-                    <div className="shape s5"><img src={Shape5} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
                 </div>
                 </SwiperSlide>
 
@@ -152,11 +177,11 @@ const HeroSlider = () => {
                         </div>
                     </div>
                     </div>
-                    <div className="shape s1"><img src={Shape} alt="" /></div>
+                    {/* <div className="shape s1"><img src={Shape} alt="" /></div>
                     <div className="shape s2"><img src={Shape2} alt="" /></div>
                     <div className="shape s3"><img src={Shape3} alt="" /></div>
                     <div className="shape s4"><img src={Shape4} alt="" /></div>
-                    <div className="shape s5"><img src={Shape5} alt="" /></div>
+                    <div className="shape s5"><img src={Shape5} alt="" /></div> */}
                 </div>
                 </SwiperSlide>
 
