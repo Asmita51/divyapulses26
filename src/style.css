@@ -1,3 +1,31 @@
 p {
   color: red;
 }/*# sourceMappingURL=style.css.map */
+
+/* .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+}
+
+.popup-box {
+    background: #fff;
+    padding: 30px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+} */

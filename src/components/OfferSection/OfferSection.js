@@ -24,8 +24,8 @@ const OfferSection = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="p-shape-1"><img src={Shape1} alt=""/></div>
-            <div className="p-shape-2"><img src={Shape2} alt=""/></div>
+            {/* <div className="p-shape-1"><img src={Shape1} alt=""/></div> */}
+            {/* <div className="p-shape-2"><img src={Shape2} alt=""/></div> */}
         </section>
     );
 };

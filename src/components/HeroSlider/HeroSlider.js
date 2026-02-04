@@ -1,5 +1,5 @@
 import React from "react";
-import { Navigation, A11y } from 'swiper';
+import { Navigation, A11y , Autoplay} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -23,13 +23,18 @@ const HeroSlider = () => {
         <section className="wpo-hero-slider " >
             <Swiper
                 // install Swiper modules
-                modules={[Navigation, A11y]}
+                modules={[Navigation, A11y, Autoplay]}
                 spaceBetween={0}
                 slidesPerView={1}
                 loop={true}
-                speed={1800}
+                speed={1500}
                 parallax={true}
                 navigation
+                autoplay={{
+                    delay: 2000,              // 👈 2 seconds
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: false,
+                }}                
             >
                 <SwiperSlide>
                 <div className="slide-inner slide-bg-image" style={{ backgroundImage: `url(${b6})` }}>

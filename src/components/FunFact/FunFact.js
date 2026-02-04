@@ -22,36 +22,36 @@ const FunFact = (props) => {
                                 <div className="info">
                                     <h3><CountUp end={50} enableScrollSpy />k+</h3>
                                     <p>Trusted Customers</p>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <img src={FaIcon1} alt=""/>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="grid">
                                 <div className="info">
                                     <h3><CountUp end={48} enableScrollSpy />.<CountUp end={6} enableScrollSpy />k+</h3>
                                     <p>Product Sale</p>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <img src={FaIcon2} alt=""/>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="grid">
                                 <div className="info">
                                     <h3><CountUp end={20} enableScrollSpy />Y+</h3>
                                     <p>Years Of Experience</p>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <img src={FaIcon3} alt=""/>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                             <div className="grid">
                                 <div className="info">
                                     <h3><CountUp end={98} enableScrollSpy />%</h3>
                                     <p>Happy Clients</p>
-                                    <div className="icon">
+                                    {/* <div className="icon">
                                         <img src={FaIcon4} alt=""/>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

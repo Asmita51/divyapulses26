@@ -7,6 +7,7 @@ import Ab from '../../images/about/ab.png'
 import Abd1 from '../../images/about/1.png'
 import Abd2 from '../../images/about/4.png'
 import Abd3 from '../../images/about/5.png'
+
 import Abd4 from '../../images/about/3.png'
 import sine from '../../images/about/2.png'
 

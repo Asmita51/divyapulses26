@@ -4,6 +4,9 @@ import { Link } from 'react-router-dom';
 import logo from '../../images/logoDivya.png'
 import header1 from '../../images/header-shape1.png'
 import header2 from '../../images/header-shape2.png'
+import call from '../../images/icon/call.svg'
+import email from '../../images/icon/email.svg'
+import time from '../../images/icon/time.svg'
 
 const HeaderTop = () => {
     return (
@@ -21,7 +24,8 @@ const HeaderTop = () => {
                         <div className="contyact-info-wrap">
                             <div className="contact-info">
                                 <div className="icon">
-                                    <i className="fi flaticon-phone-call"></i>
+                                    {/* <i className="fi flaticon-phone-call"></i> */}
+                                        <img src={call} alt="call" style={{height:'20px', width:'20px'}}/>                                    
                                 </div>
                                 <div className="info-text">
                                     <span>Call Us:</span>
@@ -30,7 +34,8 @@ const HeaderTop = () => {
                             </div>
                             <div className="contact-info">
                                 <div className="icon">
-                                    <i className="fi flaticon-email"></i>
+                                    {/* <i className="fi flaticon-email"></i> */}
+                                    <img src={email} alt="email" style={{height:'20px', width:'20px'}}/>                                    
                                 </div>
                                 <div className="info-text">
                                     <span>E-mail Now:</span>
@@ -39,7 +44,8 @@ const HeaderTop = () => {
                             </div>
                             <div className="contact-info">
                                 <div className="icon">
-                                    <i className="fi flaticon-placeholder"></i>
+                                    {/* <i className="fi flaticon-placeholder"></i> */}
+                                    <img src={time} alt="time" style={{height:'20px', width:'20px'}}/>                                    
                                 </div>
                                 <div className="info-text">
                                     <span>Time:</span>

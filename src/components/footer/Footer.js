@@ -70,9 +70,9 @@ const Footer = (props) => {
                                     <ul>
                                         <li><Link onClick={ClickHandler} to="/about">About Us</Link></li>
                                         <li><Link onClick={ClickHandler} to="/products">Products </Link></li>
-                                        <li><Link onClick={ClickHandler} to="/">Brands &amp; Packaging</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/">Meet Our Team</Link></li>
-                                        <li><Link onClick={ClickHandler} to="/">Gallery</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/brandandpackaging">Brands &amp; Packaging</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/team">Meet Our Team</Link></li>
+                                        <li><Link onClick={ClickHandler} to="/gallery">Gallery</Link></li>
                                         <li><Link onClick={ClickHandler} to="/contact">Contact Us</Link></li>
                                     </ul>
                                 </div>
@@ -134,8 +134,8 @@ const Footer = (props) => {
                         </div>
                     </div>
                 </div>
-                <div className="ft-shape-1"><img src={FtShape1} alt="" /></div>
-                <div className="ft-shape-2"><img src={FtShape2} alt="" /></div>
+                {/* <div className="ft-shape-1"><img src={FtShape1} alt="" /></div> */}
+                {/* <div className="ft-shape-2"><img src={FtShape2} alt="" /></div> */}
             </footer>
         </div>
     )

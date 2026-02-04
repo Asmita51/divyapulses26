@@ -59,7 +59,7 @@ const Testimonial = (props) => {
     return (
 
         <div className="orico-testimonial-area section-padding">
-            <div className="t-shape"><img src={Vator} alt="" /></div>
+            {/* <div className="t-shape"><img src={Vator} alt="" /></div> */}
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8">

@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react';
 import SimpleReactValidator from 'simple-react-validator';
 
 const ContactForm = () => {
-
     const [forms, setForms] = useState({
         name: '',
         email: '',
@@ -10,95 +9,149 @@ const ContactForm = () => {
         message: ''
     });
 
-    const [validator] = useState(new SimpleReactValidator({
-        className: 'errorMessage'
-    }));
+    const [, forceUpdate] = useState(0);
 
-    const changeHandler = e => {
-        setForms({ ...forms, [e.target.name]: e.target.value });
-        if (validator.allValid()) {
-            validator.hideMessages();
-        } else {
-            validator.showMessages();
+    const validator = useRef(
+        new SimpleReactValidator({
+            className: 'errorMessage',
+            autoForceUpdate: { forceUpdate }
+        })
+    );
+
+    // ---------- Input sanitizers ----------
+    const sanitizeInput = (name, value) => {
+        switch (name) {
+            case 'name':
+                return value.replace(/[^A-Za-z\s]/g, '');
+            case 'phone':
+                return value.replace(/[^0-9]/g, '').slice(0, 10);
+            case 'message':
+                return value.replace(/[<>?]/g, '');
+            case 'email':
+                return value.replace(/[<>?\s]/g, '');
+            default:
+                return value;
         }
     };
 
-    const submitHandler = e => {
+    const changeHandler = (e) => {
+        const { name, value } = e.target;
+        const sanitizedValue = sanitizeInput(name, value);
+
+        setForms(prev => ({
+            ...prev,
+            [name]: sanitizedValue
+        }));
+
+        validator.current.showMessageFor(name);
+        forceUpdate(v => v + 1);
+    };
+
+    const submitHandler = (e) => {
         e.preventDefault();
-        if (validator.allValid()) {
-            validator.hideMessages();
+
+        if (validator.current.allValid()) {
+            alert('Form submitted successfully');
+
             setForms({
                 name: '',
                 email: '',
                 phone: '',
                 message: ''
             });
+
+            validator.current.hideMessages();
         } else {
-            validator.showMessages();
+            validator.current.showMessages();
+            forceUpdate(v => v + 1);
         }
     };
 
+    const isFormValid = validator.current.allValid();
+
     return (
-        <form onSubmit={(e) => submitHandler(e)} className="contact-validation-active">
+        <form onSubmit={submitHandler} className="contact-validation-active">
             <div className="row">
 
                 <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
-                            value={forms.name}
                             type="text"
                             name="name"
-                            onBlur={changeHandler}
+                            value={forms.name}
                             onChange={changeHandler}
                             placeholder="Your Name"
                         />
-                        {validator.message('name', forms.name, 'required|alpha_space')}
+                        {validator.current.message(
+                            'name',
+                            forms.name,
+                            'required|alpha_space'
+                        )}
                     </div>
                 </div>
 
                 <div className="col col-lg-6 col-12">
                     <div className="form-field">
                         <input
-                            value={forms.email}
                             type="email"
                             name="email"
-                            onBlur={changeHandler}
+                            value={forms.email}
                             onChange={changeHandler}
                             placeholder="Your Email"
                         />
-                        {validator.message('email', forms.email, 'required|email')}
+                        {validator.current.message(
+                            'email',
+                            forms.email,
+                            'required|email'
+                        )}
                     </div>
                 </div>
 
                 <div className="col col-lg-12 col-12">
                     <div className="form-field">
                         <input
-                            value={forms.phone}
-                            type="phone"
+                            type="text"
                             name="phone"
-                            onBlur={changeHandler}
+                            value={forms.phone}
                             onChange={changeHandler}
                             placeholder="Your Phone"
                         />
-                        {validator.message('phone', forms.phone, 'required|phone')}
+                            {validator.current.message(
+                                'phone',
+                                forms.phone,
+                                'required|numeric'
+                            )}
                     </div>
                 </div>
 
                 <div className="col col-lg-12 col-12">
-                    <textarea
-                        onBlur={changeHandler}
-                        onChange={changeHandler}
-                        value={forms.message}
-                        name="message"
-                        placeholder="Message"
-                    ></textarea>
-                    {validator.message('message', forms.message, 'required')}
+                    <div className="form-field">
+                        <textarea
+                            name="message"
+                            value={forms.message}
+                            onChange={changeHandler}
+                            placeholder="Message"
+                        />
+                        {validator.current.message(
+                            'message',
+                            forms.message,
+                            'required|min:5'
+                        )}
+                    </div>
                 </div>
 
             </div>
 
             <div className="submit-area">
-                <button type="submit" className="theme-btn">
+                <button
+                    type="submit"
+                    className="theme-btn"
+                    disabled={!isFormValid}
+                    style={{
+                        opacity: isFormValid ? 1 : 0.5,
+                        cursor: isFormValid ? 'pointer' : 'not-allowed'
+                    }}
+                >
                     Get in Touch
                 </button>
             </div>
