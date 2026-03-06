@@ -82,7 +82,7 @@ const images = [
         <div className="container mb-5 pack">
           <div className="row justify-content-center">
             <div className="col-lg-8">
-              <SectionTitle title={"Our Brands"} col={"#fff"} />
+              <SectionTitle title={"A Look of Our Company and Products"} col={"#fff"} />
             </div>
           </div>
 
