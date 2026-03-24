@@ -18,7 +18,7 @@ import Logo from '../../images/logoDivya.png'
 import Choose from '../../components/ServiceSection/Choose';
 import Whatwedo from '../../components/BlogSection/Whatwedo';
 import PackagingGallery from '../../components/packaging/PackagingGallery ';
-// import PackagingGallery1 from '../../components/packaging/PackagingGallery1';
+import PackagingGallery1 from '../../components/packaging/PackagingGallery1';
 const HomePage = () => {
     return (
         <Fragment>
@@ -37,7 +37,7 @@ const HomePage = () => {
             <PartnersSection />
             <Whatwedo />
             {/* <PackagingGallery /> */}
-            {/* <PackagingGallery1 /> */}
+            <PackagingGallery1 />
 
             <OfferSection />
             {/* <TeamSection /> */}
